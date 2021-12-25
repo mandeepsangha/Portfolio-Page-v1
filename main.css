@@ -2,7 +2,7 @@
 root {
     --first-color-dark-beige: white;
     --second-color-light-beige: white;
-    --third-color-light-beige: #0150fd;
+    --third-color-light-beige: purple;
     --color-black: #000;
     --color-white: #fff;
   }
@@ -284,6 +284,8 @@ root {
   .project__images{
     object-fit: cover;
     width: 100%;
+    border: 3px solid black;
+    height: 100%;
   }
   
   .main__button__container__hidden{
@@ -396,7 +398,6 @@ root {
     }
   
     .project__images__container{
-      object-fit:cover;
       height:100%;
       width:50%;
     }
@@ -404,6 +405,7 @@ root {
     .project__images{
       object-fit:cover;
       width:100%;
+      padding:0.2rem;
     }
     
     .side__by__side{
@@ -412,11 +414,12 @@ root {
     }
   
     .project__card{
-      width:70%;
+      width:45%;
       margin-left:auto;
       margin-right:auto;
       display:flex;
       height:15rem;
+
     }
   
     .project__card__text{
