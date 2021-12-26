@@ -24,19 +24,44 @@ header {
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: auto;
   grid-template-areas:
-    "nb nb nb nb . h"
-    ".  .  .  .  . h"
-    "j  j  j  j  . .";
+    "nb nb nb nb nb h"
+    "j  j  j  j  . ."
+    ".  .  .  .  . ."
+    ".  .  .  .  . .";
 }
 
 .header__name__spacer {
   display: none;
 }
 
-nav {
+.nav {
+  flex-wrap: wrap;
   display: none;
-  flex-direction: row;
-  justify-content: space-evenly;
+  align-items: flex-end;
+}
+
+nav a:hover {
+  color: var(--third-color-light-beige);
+}
+
+.nav-ul {
+  display: none;
+  justify-content: center;
+}
+
+.nav-ul.show {
+  display: flex;
+  grid-area: nl;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1rem;
+  padding-top: 3rem;
+}
+
+.nav-ul li {
+  margin-top: 0.5rem;
+  padding-left: auto;
 }
 
 .name__box__container {
@@ -61,12 +86,14 @@ nav {
 }
 
 .hamburger__container {
+  margin-top: 0.3rem;
   width: 1.2rem;
-  height: 1rem;
+  height: 1.1rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   grid-area: h;
+  padding-left: 5.8rem;
 }
 
 .hamburger__top__line {
@@ -106,6 +133,20 @@ li {
 @media only screen and (min-width: 1000px) {
   nav {
     display: flex;
+  }
+
+  ul {
+    display: flex;
+  }
+
+  .nav-ul {
+    display: flex;
+  }
+
+  .nav-ul.show {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
   }
 
   .hamburger__container {

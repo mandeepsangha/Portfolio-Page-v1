@@ -19,12 +19,7 @@
     <title>Responsive grid project</title>
 </head>
 <body>
-    <header  >
-        <div class = "hamburger__container">
-            <div class = "hamburger__top__line"></div>
-            <div class = "hamburger__middle__line"></div>
-            <div class = "hamburger__bottom__line"></div>
-        </div>
+    <header  >   
         <div class = "name__box__container">
             <div class = "blue__box"></div>
             <div><h3>Mandeep Sangha</h3></div>
@@ -36,7 +31,13 @@
             <p>WEB DEVELOPER</p>
         </div>
         <nav>
-            <ul>
+            <btn class = "hamburger__container" id = "hamburger">
+                <div class = "hamburger__top__line"></div>
+                <div class = "hamburger__middle__line"></div>
+                <div class = "hamburger__bottom__line"></div> 
+                <i class="fas fa-bars"></i>
+            </btn>
+            <ul class = "nav-ul" id = "nav-ul">
                 <li><a href="index.html">ABOUT ME</a></li>
                 <li><a href="projects.html">PROJECTS</a></li>
                 <li><a href="contactme.html">CONTACT</a></li>
@@ -46,7 +47,7 @@
     <main>
         <div class = "blue__letstalk__container">
             <div class = "blue__box__contact"></div>
-            <h1>Let's talk</h1>
+            <h2>Let's talk</h2>
         </div>
         <div class ="fieldset__container">
             <fieldset>
@@ -94,12 +95,11 @@
         <div class = "follow__icons">
             <div>
                 <p>Follow</p>
-                <img class = "social__icons" src = "images/facebook.webp" alt="facebook icon"/>
                 <img class = "social__icons" src = "images/twitter.webp" alt="twitter icon"/>
                 <img class = "social__icons" src = "images/linkedin.webp" alt="linkedIn icon"/>
-                <img class = "social__icons" src = "images/instagram.webp" alt="instagram icon"/>
             </div>
         </div>     
     </footer>
 </body>
+<script src="script.js"></script>
 </html>

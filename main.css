@@ -293,10 +293,8 @@ root {
   
   }
   
-  nav a:hover {
-    color:var(--third-color-light-beige)
-  }
-  
+
+
   /* Desktop Version */
   
   @media only screen and (min-width: 1000px) {
@@ -353,7 +351,7 @@ root {
       justify-content: center;
       flex-direction: row;
       margin:0;
-      padding-top:5rem;
+      padding-top:3rem;
       padding-bottom:4rem;
     }
     
