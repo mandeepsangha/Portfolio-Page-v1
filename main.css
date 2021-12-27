@@ -240,8 +240,8 @@ root {
     grid-template-columns: repeat(12,1fr);
     grid-template-rows: auto;
     grid-template-areas: 
-    "b p p p p p p"
-    "b r r r r r r";
+    "b . p p p p p p p p p "
+    "b . r r r r r r r r r ";
   }
   
   .blue__rectangle_projects{
@@ -284,15 +284,19 @@ root {
   .project__images{
     object-fit: cover;
     width: 100%;
-    border: 3px solid black;
+    border: 3px solid rgb(195, 24, 238);
     height: 100%;
   }
   
   .main__button__container__hidden{
     display:none;
-  
   }
   
+  .btn__site{
+    background-color: violet;
+    padding:0.2rem;
+    font-weight: 600;
+  }
 
 
   /* Desktop Version */
@@ -397,7 +401,7 @@ root {
   
     .project__images__container{
       height:100%;
-      width:50%;
+      width:75%;
     }
   
     .project__images{
@@ -412,7 +416,7 @@ root {
     }
   
     .project__card{
-      width:45%;
+      width:65%;
       margin-left:auto;
       margin-right:auto;
       display:flex;
