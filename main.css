@@ -175,13 +175,12 @@ root {
   fieldset {
     border: none;
     background-color: white;
-    display:grid;
-    justify-content: center;
+    display:flex;
+    flex-direction: column;
     
   }
   
   .form_row {
-    display: flex;
     flex-direction: row;
   }
   
@@ -189,6 +188,7 @@ root {
     display: flex;
     flex-direction: column;
     padding: 0.25rem;
+    align-items: center;
   }
   
   input {
@@ -198,21 +198,21 @@ root {
     width:70%;
   }
   input:focus {
-    border-color: blue;
+    border-color: rgb(190, 10, 214);
   }
   
   textarea{
     outline: 0;
     border-width: 0 0 2px;
     border-color: black;
-    width:75%;
+    width:70%;
     height: 3rem;
     margin-bottom:0.5rem;
   
   }
   
   textarea:focus {
-    border-color: blue;
+    border-color: rgb(190, 10, 214);
   }
   
   .send__button {
@@ -223,6 +223,7 @@ root {
     margin: 0.3rem;
     font-weight: 600;
     font-size: 0.8rem;
+    
    
   }
   
@@ -379,7 +380,6 @@ root {
     }
   
     .fieldset__container{
-      width:50%;
       margin-left:auto;
       margin-right:auto;
     }
