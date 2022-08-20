@@ -1,8 +1,8 @@
 
 root {
     --first-color-dark-beige: white;
-    --second-color-light-beige: white;
-    --third-color-light-beige: purple;
+    --second-color: white;
+    --third-color: purple;
     --color-black: #000;
     --color-white: #fff;
   }
@@ -90,9 +90,10 @@ root {
   }
   
   .resume__button {
-    background-color: var(--third-color-light-beige);
+    /* background-color: var(--third-color-light-beige); */
     border-radius: 100px 100px 100px 100px;
-    color: white;
+
+    border: 1px solid black;
     padding: 0.3rem 1.2rem 0.3rem 1.2rem;
     margin: 0.3rem;
     font-weight: 800;
@@ -100,7 +101,7 @@ root {
   }
   
   .projects__button {
-    background-color: white;
+    
     border-radius: 100px 100px 100px 100px;
     border: 1px solid black;
     padding: 0.3rem 1rem 0.3rem 1rem;
@@ -145,13 +146,13 @@ root {
   }
   
   .resume__button:hover {
-    background-color: white;
+    background-color: rgb(199, 163, 233);
     color:black;
-    border: 2px solid var(--third-color-light-beige)
+    
   }
   
   .projects__button:hover{
-    background-color: var(--third-color-light-beige);
+    background-color: rgb(199, 163, 233);
     color:white;
   }
   
@@ -336,9 +337,8 @@ root {
   
     .main__button__container__hidden{
       display:flex;
-      padding-bottom: 2rem;
+      padding: 1rem 0 1rem;
       margin-block-end: 0;
-      justify-content: center;
     }
   
     .main__button__container__hidden p {
